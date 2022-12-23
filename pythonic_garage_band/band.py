@@ -22,6 +22,11 @@ class Musician:
     def __repr__(self):
         return f"{self.__class__.__name__} instance. Name = {self.name}"
 
+    def get_instrument(self):
+        return self.instrument
+
+    def play_solo(self):
+        return self.solo
 
 # derived class/subclass
 class Guitarist(Musician):
