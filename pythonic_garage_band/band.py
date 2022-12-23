@@ -5,11 +5,8 @@ class Band:
         self.name = name
         self.members = members or []
 
-    def __str__(self):
-        pass
-
-    def __repr__(self):
-        pass
+    def play_solos(self):
+        return [member.play_solo() for member in self.members]
 
 
 # base class/super class
@@ -25,17 +22,15 @@ class Musician:
 
 # derived class/subclass
 class Guitarist(Musician):
-    def __init__(self, name, instrument):
-        self.name = name
-        self.instrument = instrument
-
-    def __str__(self):
-        return self.name
+    def __init__(self, name):
+        super().__init__(name, "guitar", "face melting guitar solo")
 
 
 class Bassist(Musician):
-    pass
+    def __init__(self, name):
+        super().__init__(name, "bass", "bom bom buh bom")
 
 
 class Drummer(Musician):
-    pass
+    def __init__(self, name):
+        super().__init__(name, "drums", "rattle boom crash")
