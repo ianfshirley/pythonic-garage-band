@@ -28,6 +28,7 @@ class Musician:
     def play_solo(self):
         return self.solo
 
+
 # derived class/subclass
 class Guitarist(Musician):
     def __init__(self, name):
