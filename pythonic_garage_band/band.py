@@ -17,7 +17,10 @@ class Musician:
         self.solo = solo
 
     def __str__(self):
-        return self.name
+        return f"My name is {self.name} and I play {self.instrument}"
+
+    def __repr__(self):
+        return f"{self.__class__.__name__} instance. Name = {self.name}"
 
 
 # derived class/subclass

@@ -9,7 +9,7 @@ from pythonic_garage_band.band import (
 )
 
 
-@pytest.mark.skip
+# @pytest.mark.skip
 def test_guitarist_str():
     joan = Guitarist("Joan Jett")
     actual = str(joan)
